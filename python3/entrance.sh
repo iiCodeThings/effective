@@ -32,3 +32,10 @@ function venv()
             ;;
         esac
 }
+
+function croot()
+{
+    if [ -n $VIRTUAL_ENV ]; then
+        cd `dirname $VIRTUAL_ENV`
+    fi
+}
