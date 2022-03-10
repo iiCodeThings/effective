@@ -15,6 +15,8 @@ function create_venv()
     venv=".venv/bin/activate"
     python3 -m venv .venv
     source $venv
+    pip install -U pip
+    pip install wheel
 }
 
 function venv()
